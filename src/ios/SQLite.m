@@ -133,7 +133,7 @@ RCT_EXPORT_MODULE();
     return NULL;
   }
 
-  NSString *dbdir = [atKey hasPrefix:@"/"] ? atKey : appDBPaths[atkey];
+  NSString *dbdir = [atkey hasPrefix:@"/"] ? atkey : appDBPaths[atkey];
   NSString *dbPath = [dbdir stringByAppendingPathComponent: dbFile];
   return dbPath;
 }
